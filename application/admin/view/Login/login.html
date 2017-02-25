@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
+  {load href="/static/css/bootstrap/css/bootstrap.min.css"/}
+  {load href="/static/admin/css/login.css"/}
+  {load href="/static/js/jquery.js"/}
+  {load href="/static/css/bootstrap/js/bootstrap.min.js"/}
+</head>
+<body>
+<div class="container-fluid">
+<form class="form-horizontal login_form" role="form" action="{:url('admin/login/loginon')}" method="post">
+  <div><h3>系统登录</h3></div>
+  <div class="form-group">
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="username" name="username" placeholder="用户名">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="password" name="password" placeholder="密码">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" value="1" name="save_user">记住密码
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-primary">登录</button>
+      </div>
+  </div>
+</form>
+</div>
+</body>
+</html>
